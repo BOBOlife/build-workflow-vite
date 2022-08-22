@@ -5,7 +5,7 @@
 
 // import { createApp } from 'vue/dist/vue.esm-bundler.js';
 import { createApp } from 'vue/dist/vue.esm-browser';
-import SmartyUI from './entry'
+import HelloUI from './entry'
 
 
 
@@ -55,5 +55,5 @@ createApp({
   </div>
   `
 })
-  .use(SmartyUI)
+  .use(HelloUI)
   .mount('#app');

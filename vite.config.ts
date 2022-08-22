@@ -21,8 +21,8 @@ export default defineConfig({
     minify: false,
     lib: {
       entry: './src/entry.ts',
-      name: 'SmartyUI',
-      fileName: 'smarty-ui',
+      name: 'HelloUI',
+      fileName: 'hello-ui',
       // 导出的模块格式
       formats: ['es', 'umd', "iife"]
     }
