@@ -16,6 +16,7 @@ const rollupOptions = {
 
 export default defineConfig({
   build: {
+    cssCodeSplit: true, // 编译的时候是否单独输出css
     rollupOptions,
     minify: false,
     lib: {
