@@ -1,3 +1,6 @@
+/**  reference 下面这行是增加的类型定义声明   */
+/// <reference types="vitest" />  
+
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -27,6 +30,17 @@ export default defineConfig({
       formats: ['es', 'umd', "iife"]
     }
   },
+  test: {
+    // enable jest-like global test API
+    globals: true,
+    // simulate DOM with happy-dom
+    // (requires install happy-dom as a peer dependency)
+    environment: 'happy-dom',
+    // 支持 tsx 组件 
+    transformMode: {
+     web: [/.[tj]sx$/]
+    }
+  }, // 报错是因为 这个选项是vitest的的扩展属性 vite原生中并没有这个属性
   plugins: [
     vue(),
     vueJsx({}),
