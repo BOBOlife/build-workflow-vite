@@ -4,12 +4,8 @@
 // import JSXButton from './JSXButton'
 
 // import { createApp } from 'vue/dist/vue.esm-bundler.js';
-import { createApp } from 'vue/dist/vue.esm-browser';
-import HelloUI from './entry'
-
-
-
-
+import { createApp } from "vue/dist/vue.esm-browser";
+import HelloUI from "./entry";
 
 createApp({
   template: `
@@ -53,7 +49,7 @@ createApp({
     <SButton color="yellow" round plain icon="message"></SButton>
     <SButton color="red" round plain icon="delete"></SButton>
   </div>
-  `
+  `,
 })
   .use(HelloUI)
-  .mount('#app');
+  .mount("#app");
